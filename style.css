@@ -28,6 +28,7 @@ body {
 .nav-logo {
     width: 13.75%;
     min-width: 73px;
+    max-width: 176px;
 }
 
 ul {
@@ -291,6 +292,7 @@ ul {
     background-color: hsl(219, 30%, 18%);
     width: 365px;
     border-radius: 5px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.103);
 }
 
 .testimonial-container {
@@ -345,8 +347,8 @@ ul {
     position: absolute;
     text-align: center;
     background-color: hsl(217, 28%, 15%);
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.301);
-    top: -136px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.103);
+    top: -25.66%;
     border-radius: 15px;
 }
 
@@ -389,8 +391,93 @@ ul {
 footer {
     background-color: hsl(216, 53%, 9%);
     width: 100%;
-    height: 514px;
+    padding-top: 200px;
+    padding-bottom: 70px;
     position: relative;
+}
+
+.footer-container {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.footer-location p {
+    color: white;
+    padding-left: 27px;
+    font-size: 1.3rem;
+}
+
+.footer-location {
+    display: flex;
+    width: 30%;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    padding-bottom: 38px;
+}
+
+.footer-social-icons img {
+    width: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 88.89%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6.35%;
+}
+
+.info-phone {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.info-paragraph {
+    color: white;
+    padding-left: 24px;
+    font-size: 1.3rem;
+}
+
+.info-email {
+    display: flex;
+}
+
+.footer-list-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: unset;
+    padding-left: 10.07%;
+}
+
+.footer-list-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: unset;
+    padding-left: 5.55%;
+}
+
+.footer-list-1 li ,
+.footer-list-2 li {
+    padding-bottom: 20px;
+}
+
+.footer-social-icons {
+    padding-left: 7.778%;
+}
+
+.footer-social-icons img {
+    width: 32px;
+    margin-left: 12px;
 }
 
 @media screen and (max-width: 1380px) {
@@ -417,6 +504,16 @@ footer {
     }
 }
 
+@media screen and (max-width: 1085px) {
+    .early-access {
+        width: 85.42%;
+    }
+
+    .early-access-container {
+        width: 85.42%;
+    }
+}
+
 @media screen and (max-width: 975px) {
     .early-access .get-started-btn {
         margin-right: 30px;
@@ -434,9 +531,7 @@ footer {
         "file";
         grid-gap: 50px;
     }
-}
 
-@media screen and (max-width: 873px) {
     .container-testimonial-down {
         grid-template-areas: 
         "first"
@@ -449,13 +544,15 @@ footer {
         justify-self: center; 
         width: 100%;
     }
+}
 
-    .early-access {
-        width: 85.42%;
+@media screen and (max-width: 800px) {
+    .early-access-container {
+        padding-bottom: 100px;
     }
 
-    .early-access-container {
-        width: 85.42%;
+    #input-email {
+        width: 70%;
     }
 }
 
@@ -500,6 +597,40 @@ footer {
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .footer-location {
+        width: unset;
+    }
+
+    .footer-logo {
+        width: 176px;
+    }
+
+    .info {
+        padding-left: unset;
+        padding-top: 15px;
+    }
+
+    .footer-list-1 {
+        padding-left: unset;
+        padding-top: 100px;
+    }
+
+    .footer-list-2 {
+        padding-left: unset;
+        padding-top: 35px;
+    }
+
+    .footer-social-icons {
+        padding-left: unset;
+        display: flex;
+        justify-content: center;
+        padding-top: 35px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -507,5 +638,26 @@ footer {
         height: unset;
     }
 
+    .container-description {
+        width: 88.89%;
+    }
+
+    .container-description p {
+        width: unset;
+    }
+
+    .testimonial-text {
+        align-items: unset;
+        text-align: start;
+        padding-top: 20px;
+    }
+
+    .testimonial-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .early-access h1 {
+        font-size: 1.8rem;
+    }
 
 }
