@@ -26,8 +26,8 @@ body {
 }
 
 .nav-logo {
-    width: 176px;
-    height: 52px;
+    width: 13.75%;
+    min-width: 73px;
 }
 
 ul {
@@ -35,10 +35,11 @@ ul {
     color: white;
     display: flex;
     width: 270px;
+    padding-left: 50px;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-    font-family: 'Raleway' 'sans-serif';
+    font-family: 'Raleway';
 }
 
 .container {
@@ -109,20 +110,24 @@ ul {
     font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Raleway';
+    outline: none;
+    cursor: pointer;
 }
 
 .description {
     width: 100%;
-    height: 500px;
+    padding-bottom: 56px;
     background-color: hsl(218, 28%, 13%);
 }
 
 .container-description {
     width: 61.11%;
+    max-width: 1000px;
     height: 100%;
     margin: auto;
     margin-top: 35px;
     display: grid;
+    grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: auto;
     grid-template-areas: 
@@ -209,19 +214,298 @@ ul {
 
 .testimonial {
     width: 100%;
-    height: 1340px;
     background-color: hsl(218, 28%, 13%);
-    
     padding-top: 140px;
 }
 
 .container-testimonial-up {
     width: 85.42%;
+    max-width: 1000px;
     margin: auto;
     display: flex;
 }
 
+.testimonial-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-image img {
+    width: 100%;
+}
+
+.testimonial-text h1 {
+    color: white;
+    font-size: 4rem;
+    padding-left: 56px;
+}
+
+.testimonial-text p {
+    color: white;
+    padding-left: 56px;
+    padding-top: 23px;
+    font-size: 1.7rem;
+}
+
+.testimonial-text a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+}
+
+.testimonial-text div {
+    width: 178px;
+    display: flex;
+    align-items: center;
+    margin-left: 56px;
+    padding-top: 32px;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding-bottom: 5px;
+}
+
+.testimonial-text img {
+    padding-left: 5px;
+}
+
 .container-testimonial-down {
     width: 85.42%;
+    max-width: 1200px;
     margin: auto;
+    padding-top: 175px;
+    padding-bottom: 389px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(365px , 1fr));
+    justify-items: center;
+    grid-gap: 40px;
+}
+
+.testimonial-card {
+    background-color: hsl(219, 30%, 18%);
+    width: 365px;
+    border-radius: 5px;
+}
+
+.testimonial-container {
+    width: 85.21%;
+    margin: auto;
+    padding-top: 44px;
+    padding-bottom: 28px;
+}
+
+.quote {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.profile-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    display: flex;
+}
+
+.profile-name div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: space-around;
+}
+
+.name {
+    font-size: 1rem;
+    color: white;
+}
+
+.CEO {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.early-access-container {
+    width: 62.85%;
+    max-width: 862px;
+    margin: auto;
+}
+
+.early-access {
+    width: 62.85%;
+    max-width: 862px;
+    position: absolute;
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.301);
+    top: -136px;
+    border-radius: 15px;
+}
+
+.early-access h1 {
+    color: white;
+    font-size: 3rem;
+    padding-top: 52px;
+}
+
+.early-access p {
+    width: 71.93%;
+    margin: auto;
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.early-access .get-started-btn {
+    padding: 1.2em 2em;
+    outline: none;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+#input-email {
+    width: 51.97%;
+    border: none;
+    border-radius: 30px;
+    padding: 1.2em 1.2em;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    outline: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: hsl(216, 53%, 9%);
+    width: 100%;
+    height: 514px;
+    position: relative;
+}
+
+@media screen and (max-width: 1380px) {
+    .container-testimonial-down :nth-child(1) {
+        grid-area: first;
+        justify-self: end;
+    }
+
+    .container-testimonial-down :nth-child(2) {
+        grid-area: second;
+        justify-self: start;
+    }
+
+    .container-testimonial-down :nth-child(3) {
+        grid-area: third;
+        justify-self: center;
+    }
+
+    .container-testimonial-down {
+        grid-template-areas: 
+        "first second"
+        "third third";
+        justify-items: unset;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .early-access .get-started-btn {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .container-description{
+        grid-template-areas: 
+        "access"
+        "security"
+        "real-time"
+        "file";
+        grid-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 873px) {
+    .container-testimonial-down {
+        grid-template-areas: 
+        "first"
+        "second"
+        "third";
+        grid-template-columns: unset;
+    }
+    
+    #card {
+        justify-self: center; 
+        width: 100%;
+    }
+
+    .early-access {
+        width: 85.42%;
+    }
+
+    .early-access-container {
+        width: 85.42%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container-testimonial-up {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-text {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial-text h1 {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .testimonial-text p {
+        padding-left: 0;
+    }
+
+    .testimonial-text div {
+        margin-left: 0;
+    }
+
+    .container-testimonial-down {
+        padding-top: 100px;
+    }
+
+    .testimonial-image {
+        width: 100%;
+    }
+
+    .container-get-started img {
+        width: 88.89%;
+    }
+
+    .early-access h1 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    nav {
+        height: unset;
+    }
+
+
 }
