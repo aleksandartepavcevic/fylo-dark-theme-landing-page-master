@@ -660,4 +660,12 @@ footer {
         font-size: 1.8rem;
     }
 
+    .footer {
+        padding-bottom: 20px;
+    }
+
+    .early-access-container {
+        padding-bottom: 50px;
+    }
+
 }
