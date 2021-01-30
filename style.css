@@ -660,11 +660,19 @@ footer {
         font-size: 1.8rem;
     }
 
-    .footer {
-        padding-bottom: 20px;
+    footer {
+        padding-bottom: 0px;
+    }
+
+    .footer-social-icons {
+        padding-top: 0px;
     }
 
     .early-access-container {
+        padding-bottom: 50px;
+    }
+
+    #info-container-second {
         padding-bottom: 50px;
     }
 
