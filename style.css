@@ -31,6 +31,10 @@ body {
     max-width: 176px;
 }
 
+.nav-logo img {
+    width: 100%;
+}
+
 ul {
     list-style-type: none;
     display: flex;
